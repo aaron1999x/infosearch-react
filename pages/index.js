@@ -1,118 +1,141 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Head from 'next/head'
+import logo from '../public/info-logo.png'
+import logolight from '../public/info-logo-white.png'
+import { TypeAnimation } from 'react-type-animation';
+import HomeAccordion from '../components/HomeAccordion';
+import CompanyStat from '@/components/CompanyStat';
+import ServicesTab from '@/components/ServicesTab';
+import maisca1 from '../public/maisca.webp';
+import maisca2 from '../public/maiscalogo.webp';
+import ssm from '../public/ssm.webp';
+import Map from '@/components/Map'
+import {AiOutlineMail,AiOutlinePhone} from 'react-icons/ai'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
+
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <Head>
+        <title>Infosearch</title>
+        <meta name="description" content="Infosearch Consultancy" />
+      </Head>
+      <main className={` ${inter.className} relative`}>
+        <section className='h-screen bg-white'>
+          <nav className='w-full p-6'>
+              <Image src={logo} className='w-[180px]' />
+              
+          </nav>
+          <div className=' h-full flex items-center -mt-[32px] px-6'>
+            <div>
+              <p className='text-infored text-lg font-semibold uppercase tracking-tight'>Infosearch consultancy</p>
+              <h1 className='text-5xl font-bold'>
+                Simplify your corporate journey with us.
+              </h1>
+              <p className='text-xl'>Our services consists of </p>
+              <TypeAnimation
+                sequence={[
+                  'Secretarial Appointments.',
+                  1000, // Waits 1s
+                  'Trademark Registration.', 
+                  1000, // Waits 1s
+                  'Company Formation.',
+                  1000,
+              
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                style={{ display: 'inline-block' }}
+                className='text-xl text-infored'
+              />
+              <div className='mt-3'>
+                <button class="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg">
+                  <a href="mailto:info@info-search.com.my?subject=I would like a Qoute!">Get a Qoute</a>
+                </button>
+              </div>
+            </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        </section>
+        <section className='px-6 mb-12'>
+          <div>
+            <h4 className='text-3xl font-semibold mb-2 text-bluetitle'>Why choose us?</h4>
+            <p className='text-sm'>
+              Since 1990, we’ve helped thousands of companies nationwide.
+              We will take care of all your business needs through our broad scopes of Corporate Secretarial Services that cover all areas of company formation and ongoing administration.
+            </p>
+          </div>
+          <div className='my-8'>
+            <HomeAccordion />
+            <div className='flex flex-col gap-6 mt-10'>
+              <CompanyStat number='600' text="active clients" />
+              <CompanyStat number='2000' text="companies incoporated" />
+              <CompanyStat number='5000' text="lifetime clients" />
+            </div>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        </section>
+        <section className='px-6'>
+          <h4 className='text-3xl font-semibold mb-2 text-bluetitle text-center mb-6'>Our Services.</h4>
+          <ServicesTab />
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+        <section className='px-6 my-14'>
+          <div className='flex flex-col gap-8'>
+            <div>
+              <h4 className='text-3xl font-semibold mb-2 text-bluetitle text-center mb-6'>We are Licensed By</h4>
+              <div className='flex justify-center items-center gap-6'>
+                <Image src={maisca1} alt='maisca' />
+                <Image src={maisca2} alt='maisca2' />
+              </div>
+            </div>
+            <div>
+              <h4 className='text-3xl font-semibold mb-2 text-bluetitle text-center mb-6'>In Compliance With</h4>
+              <div className='flex justify-center items-center gap-6'>
+                <Image src={ssm} alt='maisca' />
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <footer className='px-6 pt-10 pb-3 bg-bluelite'>
+          <div className='flex flex-col gap-10 py-6'>
+            <Image src={logolight} className='w-[150px]'/>
+            <div>
+              <h4 className='text-2xl text-white font-semibold mb-2'>Contact</h4>
+              <div className='flex items-center text-bluetitle gap-2 text-lg'>
+                <AiOutlinePhone/>
+                <a href="tel:0378051810" className='hover:underline'>(+603) 7805 1810</a>
+              </div>
+              <div className='flex items-center text-bluetitle gap-2 text-lg'>
+                <AiOutlineMail />
+                <a href="mailto:info@info-search.com.my" className='hover:underline'>info@info-search.com.my</a>
+              </div>
+            </div>
+            <div>
+              <h4 className='text-2xl text-white font-semibold mb-2'>Headquarters</h4>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=42B,%20Jalan%20SS%206/8,%2047301%20Petaling%20Jaya,%20Selangor,%20Malaysia" className='hover:underline text-bluetitle'>
+                42B, Jalan SS 6/8, Kelana Jaya 47301 Petaling Jaya, Selangor
+              </a>
+            </div>
+            <div className='flex'>
+              <Map />
+            </div>
+            
+          </div>
+          <div className='flex justify-center items-center text-white mt-5'>
+            <p>Built by <span><a href="https://aaron-linktree.vercel.app/" target='_blank' className='underline'>Aaron</a></span>.</p>
+          </div>
+
+        </footer>
+      </main>
+    </>
+    
   )
 }
