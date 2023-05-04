@@ -73,7 +73,7 @@ export default function ServicesTab() {
                     <li>Corporate Information</li>
                   </ul>
 
-                  <li>Director's Resolution:</li>
+                  <li>Director&apos;s Resolution:</li>
                   <ul class="list-disc pl-5">
                     <li>First Board Resolution</li>
                     <li>Opening of First Bank Account</li>
@@ -81,7 +81,7 @@ export default function ServicesTab() {
                   </ul>
 
                   <li>Issuance of Share Certificate(s)</li>
-                  <li>Obtain Company Tax Number (C) and Employer's Tax Number (E)</li>
+                  <li>Obtain Company Tax Number (C) and Employer&apos;s Tax Number (E)</li>
                   <li>Provision of Registered Address</li>
                   <li>Maintenance of Company Records & Registers</li>
                   <li>Appointment of 2 MAICSA Certified Company Secretaries</li>
@@ -103,7 +103,7 @@ export default function ServicesTab() {
               <div className='mt-2'>
                 <ol className='list-decimal pl-5'>
                   <li>Appointment of 2 MAICSA Certified Professional Secretaries</li>
-                  <li>Use of our Office Address as your Company's Registered Address</li>
+                  <li>Use of our Office Address as your Company&apos;s Registered Address</li>
                   <li>Filing of Yearly Annual Returns & Financial Statements</li>
                   <li>Drafting of Directors & Members Resolutions</li>
                   <li>Certification of Statutory Documents</li>
@@ -125,7 +125,7 @@ export default function ServicesTab() {
                 Get in touch with us to enquire.
               </p>
               <p>
-                Trademark registration is the process of legally protecting a unique brand name, logo, slogan, or design from being used by others without permission. Registering a trademark can provide legal rights and protections for a business or individual's intellectual property, including the exclusive right to use the mark in connection with their goods or services.
+                Trademark registration is the process of legally protecting a unique brand name, logo, slogan, or design from being used by others without permission. Registering a trademark can provide legal rights and protections for a business or individual&apos;s intellectual property, including the exclusive right to use the mark in connection with their goods or services.
               </p>
             </div>
           </Tab.Panel>
