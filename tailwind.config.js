@@ -16,6 +16,7 @@ module.exports = {
         infored: "#EE4A6F",
         bluelite:"#8b9db0",
         bluetitle:"#114366",
+        whatsapp:"#25D366"
       },
     },
   },

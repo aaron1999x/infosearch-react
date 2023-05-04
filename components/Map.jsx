@@ -7,7 +7,7 @@ const Map = () => {
   });
   const center = useMemo(() => ({ lat: 3.106026972295699, lng: 101.59766799903595 }), []);
   return (
-    <div className="Map h-[450px]">
+    <div className="Map h-[450px]  lg:h-[300px]">
       {!isLoaded ? (
         <h1>Loading...</h1>
       ) : (

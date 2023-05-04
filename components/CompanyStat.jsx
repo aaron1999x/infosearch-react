@@ -15,7 +15,7 @@ const CompanyStat = (props) => {
 
   return (
     <div ref={ref} className='border-l-4 border-infored pl-4'>
-      <div className='text-3xl font-bold'>
+      <div className='text-3xl font-bold lg:text-4xl'>
         {hasTriggered ? 
           <CountUp 
             end={props.number}
@@ -25,7 +25,7 @@ const CompanyStat = (props) => {
           /> : 0
         }
       </div>
-      <div>
+      <div className='lg:text-lg'>
         {props.text}
       </div>
     </div>

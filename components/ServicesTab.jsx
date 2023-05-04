@@ -7,14 +7,14 @@ function classNames(...classes) {
 export default function ServicesTab() {
 
   return (
-    <div className="w-full max-w-md px-2 pb-16 sm:px-0">
+    <div className="w-full max-w-md px-2 pb-16 mx-auto sm:px-0 lg:max-w-[800px] 2xl:max-w-[1000px]">
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-100 p-1">
             <Tab
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5  text-blue-900',
-                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5  text-blue-900 lg:text-lg',
+                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2 ',
                   selected
                     ? 'bg-white shadow'
                     : 'text-blue-900 hover:bg-white/[0.12] hover:text-white'
@@ -26,7 +26,7 @@ export default function ServicesTab() {
             <Tab
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-900',
+                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-900 lg:text-lg',
                   'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                   selected
                     ? 'bg-white shadow'
@@ -39,7 +39,7 @@ export default function ServicesTab() {
             <Tab
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-900',
+                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-900 lg:text-lg',
                   'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                   selected
                     ? 'bg-white shadow'
@@ -58,7 +58,7 @@ export default function ServicesTab() {
               'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2  shadow-lg'
             )}
           >
-            <div className='p-1'>
+            <div className='p-1 lg:text-lg lg:p-3'>
               <h2 className='font-bold'>Private Limited Company (Sdn. Bhd.)</h2>
               <p>Our Goal is to guide you on everything you need when setting up your Company.</p>
               <p>Incorporation Package includes the following value added services:</p>
@@ -98,7 +98,7 @@ export default function ServicesTab() {
               'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2  shadow-lg'
             )}
           >
-            <div className='p-1'>
+            <div className='p-1 lg:text-lg lg:p-3'>
               <p>To provide you with flexibility, we work on a fixed monthly retainer. Our scope of work are inclusive but not limited to the following:</p>
               <div className='mt-2'>
                 <ol className='list-decimal pl-5'>
@@ -119,7 +119,7 @@ export default function ServicesTab() {
               'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2  shadow-lg'
             )}
           >
-            <div className='p-1'>
+            <div className='p-1 lg:text-lg lg:p-3'>
               <p>Have you created a logo or a brand that you are proud of?
                 Register your Trademark to protect your assets.
                 Get in touch with us to enquire.
