@@ -28,7 +28,7 @@ export default function Home() {
       <main className={` ${inter.className} relative`}>
         <section className='h-screen bg-white'>
           <nav className='w-full p-6 lg:px-12 2xl:px-32'>
-              <Image src={logo} className='w-[180px] lg:w-[200px]' />
+              <Image src={logo} alt="Infosearch Logo" className='w-[180px] lg:w-[200px]' />
           </nav>
           <div className=' h-full flex items-center -mt-[32px] px-6 lg:w-[1000px] 2xl:w-[1200px]  lg:mx-auto'>
             <div>
@@ -101,20 +101,20 @@ export default function Home() {
             <div>
               <h4 className='text-3xl font-semibold mb-2 text-bluetitle text-center mb-6'>In Compliance With</h4>
               <div className='flex justify-center items-center gap-6'>
-                <Image src={ssm} alt='maisca' />
+                <Image src={ssm} alt='SSM' />
               </div>
             </div>
           </div>
         </section>
 
         <div className='fixed z-50 w-[60px] h-[60px] right-2 bottom-2  bg-whatsapp rounded-full p-3  hover:scale-125 ease duration-300 lg:right-5 lg:bottom-5'>
-          <a href="https://wa.me/60378051810?text=I%20would%20like%20to%20get%20a%20qoute!" target='_blank'><Image src={whatsapp} /></a>
+          <a href="https://wa.me/60378051810?text=I%20would%20like%20to%20get%20a%20qoute!" target='_blank'><Image src={whatsapp} alt='whatsapp' /></a>
         </div>
 
         <footer className='px-6 pt-10 pb-3 bg-bluelite lg:px-16 2xl:px-32'>
           <div className='flex flex-col gap-10 py-6 lg:flex-row lg:items-start lg:justify-between'>
             <div className='lg:w-1/5'>
-              <Image src={logolight} className='w-[180px] lg:w-[200px]'/>
+              <Image src={logolight} alt='Infosearch logo' className='w-[180px] lg:w-[200px]'/>
             </div>
             <div className='lg:w-1/5'>
               <h4 className='text-2xl text-white font-semibold mb-2 lg:text-3xl'>Contact</h4>
