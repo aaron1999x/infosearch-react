@@ -18,7 +18,7 @@ const Map = () => {
         >
           <MarkerF
             position={{ lat: 3.106026972295699, lng: 101.59766799903595 }}
-            animation={google.maps.Animation.BOUNCE}
+            animation={google.maps.Animation.DROP}
           />
         </GoogleMap>
       )}
