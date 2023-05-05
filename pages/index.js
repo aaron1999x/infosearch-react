@@ -46,6 +46,33 @@ const statsItem={
   },
 }
 
+const heroAnimations={
+  initialLeft:{
+    opacity:0,
+    x:-50
+  },
+  animateX:{
+    opacity:1,
+    x:0,
+    transition:{
+      duration:1,
+      delay:1
+    }
+  },
+  initialBottom:{
+    opacity:0,
+    y:50
+  },
+  animateY:{
+    opacity:1,
+    y:0,
+    transition:{
+      duration:1,
+      delay:1
+    }
+  },
+}
+
 const animations={
   initialLeft:{
     opacity:0,
@@ -105,7 +132,7 @@ export default function Home() {
           <div className=' h-full flex items-center -mt-[32px] px-6 lg:w-[1000px] 2xl:w-[1200px]  lg:mx-auto'>
             <div>
               <motion.p className='text-infored text-lg font-semibold uppercase tracking-tight'
-                variants={animations}
+                variants={heroAnimations}
                 initial="initialLeft"
                 animate="animateX"
                 
@@ -131,7 +158,7 @@ export default function Home() {
               />
               <div className='mt-3'>
                 <motion.button class="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg"
-                  variants={animations}
+                  variants={heroAnimations}
                   initial="initialBottom"
                   animate="animateY"
                 >
@@ -229,9 +256,9 @@ export default function Home() {
               >In Compliance With</motion.h4>
               <motion.div className='flex justify-center items-center gap-6'
                  variants={animations}
-                 initial="initialFade"
-                 whileInView="animateFade"
-                 viewport={{once:true}}
+                initial="initialFade"
+                whileInView="animateFade"
+                viewport={{once:true}}
               >
                 <Image src={ssm} alt='SSM' />
               </motion.div>
