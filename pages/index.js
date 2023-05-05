@@ -13,10 +13,38 @@ import ssm from '../public/ssm.webp';
 import Map from '@/components/Map';
 import {AiOutlineMail,AiOutlinePhone} from 'react-icons/ai';
 import whatsapp from '../public/whatsapp-white.png';
-import {motion} from 'framer-motion'
+import {animate, motion} from 'framer-motion'
+import AnimatedText from '@/components/AnimatedText'
 
 
 const inter = Inter({ subsets: ['latin'] })
+
+const animations={
+  initialLeft:{
+    opacity:0,
+    x:-50
+  },
+  initialBottom:{
+    opacity:0,
+    y:50
+  },
+  animateX:{
+    opacity:1,
+    x:0,
+    transition:{
+      duration:1,
+      delay:0.2
+    }
+  },
+  animateY:{
+    opacity:1,
+    y:0,
+    transition:{
+      duration:1,
+      delay:0.2
+    }
+  }
+}
 
 
 export default function Home() {
@@ -34,14 +62,13 @@ export default function Home() {
           <div className=' h-full flex items-center -mt-[32px] px-6 lg:w-[1000px] 2xl:w-[1200px]  lg:mx-auto'>
             <div>
               <motion.p className='text-infored text-lg font-semibold uppercase tracking-tight'
-                initial={{opacity: 0, x: -50}}
-                animate={{opacity:1,x:0}}
-                transition={{duration:1}}
+                variants={animations}
+                initial="initialLeft"
+                animate="animateX"
+                
               >Infosearch consultancy
               </motion.p>
-              <h1 className='text-5xl font-bold md:text-6xl md:my-2 lg:max-w-3xl'>
-                Simplify your corporate journey with us.
-              </h1>
+              <AnimatedText text="Simplify your corporate journey with us." />
               <p className='text-xl md:text-2xl md:inline'>Our services consists of </p>
               <TypeAnimation
                 sequence={[
@@ -60,9 +87,13 @@ export default function Home() {
                 className='text-xl text-infored md:text-2xl'
               />
               <div className='mt-3'>
-                <button class="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg">
+                <motion.button class="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg"
+                  variants={animations}
+                  initial="initialBottom"
+                  animate="animateY"
+                >
                   <a href="mailto:info@info-search.com.my?subject=I would like a Qoute!">Get a Qoute</a>
-                </button>
+                </motion.button>
               </div>
             </div>
 
