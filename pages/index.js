@@ -19,6 +19,33 @@ import AnimatedText from '@/components/AnimatedText'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const stats = {
+  initial:{
+    opacity:1,
+  },
+  animate:{
+    opacity:1,
+    transition:{
+      delay:0.5,
+      staggerChildren:1
+    }
+  }
+}
+
+const statsItem={
+  initial:{
+    opacity:0,
+    y:50
+  },
+  animate:{
+    opacity:1,
+    y:0,
+    transition:{
+      duration:1,
+    }
+  },
+}
+
 const animations={
   initialLeft:{
     opacity:0,
@@ -116,7 +143,7 @@ export default function Home() {
           </div>
 
         </section>
-        <section className='px-6 mb-12 lg:w-[1000px] 2xl:w-[1200px] lg:pt-1 lg:mx-auto lg:mb-24 2xl:mb-36'>
+        <section className='px-6 mb-24 lg:w-[1000px] 2xl:w-[1200px] lg:pt-1 lg:mx-auto lg:mb-24 2xl:mb-36'>
           <div className='flex flex-col lg:flex-row justify-between'>
             <motion.h4 className='text-3xl font-semibold mb-4 text-bluetitle lg:w-2/5 lg:text-4xl'
               variants={animations}
@@ -125,10 +152,6 @@ export default function Home() {
               viewport={{once:true}}
             >Why choose us?</motion.h4>
             <motion.p className='text-sm lg:w-3/5 lg:text-base'
-              variants={animations}
-              initial="initialRight"
-              whileInView="animateX"
-              viewport={{once:true}}
             >
               At Infosearch, we specialize in providing corporate secretarial services to SMEs. With over 30 years of experience, we offer a comprehensive range of services, including business incorporation and advisory, to give your business a competitive edge. Our team of professionals has the necessary skill sets to meet your specific needs, making us a one-stop-shop for all your business needs. Choose us to handle the complicated administrative work, while you focus on growing your business.
             </motion.p>
@@ -143,20 +166,31 @@ export default function Home() {
               <HomeAccordion />
             </motion.div>
             <motion.div className='flex flex-col gap-6 mt-10 lg:items-center lg:flex-row lg:mt-0 lg:flex-wrap lg:w-[400px] '
-              variants={animations}
-              initial="initialBottom"
-              whileInView="animateY"
-              viewport={{once:true}}
+              variants={stats}
+              initial="initial"
+              whileInView="animate"
             >
-              <CompanyStat number='600' text="active clients" />
-              <CompanyStat number='2000' text="companies incoporated" />
-              <CompanyStat number='5000' text="lifetime clients" />
+              <motion.div
+                variants={statsItem}
+              >
+                <CompanyStat number='600' text="active clients" />
+              </motion.div>
+              <motion.div
+                variants={statsItem}
+              >
+                <CompanyStat number='2000' text="companies incoporated" />
+              </motion.div>
+              <motion.div
+                variants={statsItem}
+              >
+                <CompanyStat number='5000' text="lifetime clients" />
+              </motion.div>
             </motion.div>
           </div>
 
         </section>
         <section className='px-6'>
-          <h4 className='text-3xl font-semibold text-bluetitle text-center mb-6 lg:text-4xl lg:mb-12'>Our Services.</h4>
+          <h4 className='text-3xl font-semibold text-bluetitle text-center mb-12 lg:text-4xl lg:mb-12'>Our Services.</h4>
           <motion.div
             variants={animations}
             initial="initialFade"
@@ -170,17 +204,37 @@ export default function Home() {
         <section className='px-6 my-14 lg:px-12 lg:py-12'>
           <div className='flex flex-col gap-8 lg:flex-row lg:justify-center lg:gap-24'>
             <div>
-              <h4 className='text-3xl font-semibold text-bluetitle text-center mb-6'>We are Licensed By</h4>
-              <div className='flex justify-center items-center gap-6'>
+              <motion.h4 className='text-3xl font-semibold text-bluetitle text-center mb-6'
+                variants={animations}
+                initial="initialLeft"
+                whileInView="animateX"
+                viewport={{once:true}}
+              >We are Licensed By</motion.h4>
+              <motion.div className='flex justify-center items-center gap-6'
+                variants={animations}
+                initial="initialFade"
+                whileInView="animateFade"
+                viewport={{once:true}}
+              >
                 <Image src={maisca1} alt='maisca' />
                 <Image src={maisca2} alt='maisca2' />
-              </div>
+              </motion.div>
             </div>
             <div>
-              <h4 className='text-3xl font-semibold mb-2 text-bluetitle text-center mb-6'>In Compliance With</h4>
-              <div className='flex justify-center items-center gap-6'>
+              <motion.h4 className='text-3xl font-semibold mb-2 text-bluetitle text-center mb-6'
+                variants={animations}
+                initial="initialLeft"
+                whileInView="animateX"
+                viewport={{once:true}}
+              >In Compliance With</motion.h4>
+              <motion.div className='flex justify-center items-center gap-6'
+                 variants={animations}
+                 initial="initialFade"
+                 whileInView="animateFade"
+                 viewport={{once:true}}
+              >
                 <Image src={ssm} alt='SSM' />
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
