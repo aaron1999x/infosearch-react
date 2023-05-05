@@ -196,6 +196,7 @@ export default function Home() {
               variants={stats}
               initial="initial"
               whileInView="animate"
+              viewport={{once:true}}
             >
               <motion.div
                 variants={statsItem}
@@ -271,11 +272,11 @@ export default function Home() {
         </div>
 
         <footer className='px-6 pt-10 pb-3 bg-bluelite lg:px-16 2xl:px-32'>
-          <div className='flex flex-col gap-10 py-6 lg:flex-row lg:items-start lg:justify-between'>
+          <div className='flex flex-col gap-16 py-6 lg:flex-row lg:items-start lg:justify-between lg:w-[1000px] lg:mx-auto 2xl:w-[1400px]'>
             <div className='lg:w-1/5'>
               <Image src={logolight} alt='Infosearch logo' className='w-[180px] lg:w-[200px]'/>
             </div>
-            <div className='lg:w-1/5'>
+            <div className='lg:w-2/5'>
               <h4 className='text-2xl text-white font-semibold mb-2 lg:text-3xl'>Contact</h4>
               <div className='flex items-center text-bluetitle gap-2 text-lg mb-2'>
                 <AiOutlinePhone/>
