@@ -19,48 +19,6 @@ import AnimatedText from '@/components/AnimatedText'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const animations={
-  initialLeft:{
-    opacity:0,
-    x:-50
-  },
-  initialFade:{
-    opacity:0,
-    scale:0.5
-  },
-  initialRight:{
-    opacity:0,
-    x:50
-  },
-  initialBottom:{
-    opacity:0,
-    y:50
-  },
-  animateX:{
-    opacity:1,
-    x:0,
-    transition:{
-      duration:1,
-      delay:0.2
-    }
-  },
-  animateY:{
-    opacity:1,
-    y:0,
-    transition:{
-      duration:1,
-      delay:0.2
-    }
-  },
-  animateFade:{
-    opacity:1,
-    scale:1,
-    transition:{
-      duration:0.7,
-      delay:0.2
-    }
-  }
-}
 
 
 export default function Home() {
@@ -77,13 +35,8 @@ export default function Home() {
           </nav>
           <div className=' h-full flex items-center -mt-[32px] px-6 lg:w-[1000px] 2xl:w-[1200px]  lg:mx-auto'>
             <div>
-              <motion.p className='text-infored text-lg font-semibold uppercase tracking-tight'
-                variants={animations}
-                initial="initialLeft"
-                animate="animateX"
-                
-              >Infosearch consultancy
-              </motion.p>
+              <p className='text-infored text-lg font-semibold uppercase tracking-tight'>Infosearch consultancy
+              </p>
               <AnimatedText text="Simplify your corporate journey with us." />
               <p className='text-xl md:text-2xl md:inline'>Our services consists of </p>
               <TypeAnimation
@@ -103,68 +56,39 @@ export default function Home() {
                 className='text-xl text-infored md:text-2xl'
               />
               <div className='mt-3'>
-                <motion.button class="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg"
-                  variants={animations}
-                  initial="initialBottom"
-                  animate="animateY"
-                >
+                <button class="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg">
                   <a href="mailto:info@info-search.com.my?subject=I would like a Qoute!">Get a Qoute</a>
-                </motion.button>
+                </button>
               </div>
             </div>
 
           </div>
 
         </section>
-        <section className='px-6 mb-12 lg:w-[1000px] 2xl:w-[1200px]  lg:pt-1 lg:mx-auto lg:mb-24 2xl:mb-36'>
+        <section className='px-6 mb-12 lg:w-[1000px] 2xl:w-[1200px] lg:pt-1 lg:mx-auto lg:mb-24 2xl:mb-36'>
           <div className='flex flex-col lg:flex-row justify-between'>
-            <motion.h4 className='text-3xl font-semibold mb-4 text-bluetitle lg:w-2/5 lg:text-4xl'
-              variants={animations}
-              initial="initialLeft"
-              whileInView="animateX"
-              viewport={{once:true}}
-            >Why choose us?</motion.h4>
-            <motion.p className='text-sm lg:w-3/5 lg:text-base'
-              variants={animations}
-              initial="initialRight"
-              whileInView="animateX"
-              viewport={{once:true}}
-            >
+            <h4 className='text-3xl font-semibold mb-4 text-bluetitle lg:w-2/5 lg:text-4xl'>Why choose us?</h4>
+            <p className='text-sm lg:w-3/5 lg:text-base'>
               At Infosearch, we specialize in providing corporate secretarial services to SMEs. With over 30 years of experience, we offer a comprehensive range of services, including business incorporation and advisory, to give your business a competitive edge. Our team of professionals has the necessary skill sets to meet your specific needs, making us a one-stop-shop for all your business needs. Choose us to handle the complicated administrative work, while you focus on growing your business.
-            </motion.p>
+            </p>
           </div>
           <div className='my-8 flex flex-col lg:flex-row justify-between item-center lg:my-12'>
-            <motion.div className='lg:w-[500px]'
-              variants={animations}
-              initial="initialBottom"
-              whileInView="animateY"
-              viewport={{once:true}}
-            >
+            <div className='lg:w-[500px]'>
               <HomeAccordion />
-            </motion.div>
-            <motion.div className='flex flex-col gap-6 mt-10 lg:items-center lg:flex-row lg:mt-0 lg:flex-wrap lg:w-[400px] '
-              variants={animations}
-              initial="initialBottom"
-              whileInView="animateY"
-              viewport={{once:true}}
-            >
+            </div>
+            <div className='flex flex-col gap-6 mt-10 lg:items-center lg:flex-row lg:mt-0 lg:flex-wrap lg:w-[400px] '>
               <CompanyStat number='600' text="active clients" />
               <CompanyStat number='2000' text="companies incoporated" />
               <CompanyStat number='5000' text="lifetime clients" />
-            </motion.div>
+            </div>
           </div>
 
         </section>
         <section className='px-6'>
           <h4 className='text-3xl font-semibold text-bluetitle text-center mb-6 lg:text-4xl lg:mb-12'>Our Services.</h4>
-          <motion.div
-            variants={animations}
-            initial="initialFade"
-            whileInView="animateFade"
-            viewport={{once:true}}
-          >
+          <div>
             <ServicesTab />
-          </motion.div>
+          </div>
         </section>
 
         <section className='px-6 my-14 lg:px-12 lg:py-12'>
