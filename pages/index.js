@@ -13,6 +13,7 @@ import ssm from '../public/ssm.webp';
 import Map from '@/components/Map';
 import {AiOutlineMail,AiOutlinePhone} from 'react-icons/ai';
 import whatsapp from '../public/whatsapp-white.png';
+import {motion} from 'framer-motion'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,7 +33,12 @@ export default function Home() {
           </nav>
           <div className=' h-full flex items-center -mt-[32px] px-6 lg:w-[1000px] 2xl:w-[1200px]  lg:mx-auto'>
             <div>
-              <p className='text-infored text-lg font-semibold uppercase tracking-tight'>Infosearch consultancy</p>
+              <motion.p className='text-infored text-lg font-semibold uppercase tracking-tight'
+                initial={{opacity: 0, x: -50}}
+                animate={{opacity:1,x:0}}
+                transition={{duration:1}}
+              >Infosearch consultancy
+              </motion.p>
               <h1 className='text-5xl font-bold md:text-6xl md:my-2 lg:max-w-3xl'>
                 Simplify your corporate journey with us.
               </h1>
