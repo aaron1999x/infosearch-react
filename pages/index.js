@@ -162,7 +162,7 @@ export default function Home() {
                   initial="initialBottom"
                   animate="animateY"
                 >
-                  <a href="mailto:info@info-search.com.my?subject=I would like a Qoute!">Get a Qoute</a>
+                  <a href="mailto:info@info-search.com.my?subject=I would like a Qoute!">Get a Quote</a>
                 </motion.button>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function Home() {
         </section>
 
         <div className='animate-bounce fixed z-50 w-[60px] h-[60px] right-2 bottom-2  bg-whatsapp rounded-full p-3  hover:scale-125 ease duration-300 lg:right-5 lg:bottom-5'>
-          <a href="https://wa.me/60378051810?text=I%20would%20like%20to%20get%20a%20qoute!" target='_blank'><Image src={whatsapp} alt='whatsapp' /></a>
+          <a href="https://wa.me/60378051810?text=I%20would%20like%20to%20get%20a%20quote!" target='_blank'><Image src={whatsapp} alt='whatsapp' /></a>
         </div>
 
         <footer className='px-6 pt-10 pb-3 bg-bluelite lg:px-16 2xl:px-32'>
