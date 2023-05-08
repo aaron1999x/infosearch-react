@@ -121,8 +121,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Infosearch</title>
-        <meta name="description" content="Infosearch Consultancy" />
+        <title>Corporate Secretarial Services | Infosearch Consultancy PLT</title>
+        <meta name="description" content="Looking for Corporate Secretarial Services in Malaysia? Infosearch Consultancy will take care of all your business needs through our broad scopes of Company Secretarial Services that cover all areas of company formation and ongoing administration." />
       </Head>
       <main className={` ${inter.className} relative`}>
         <section className='h-screen bg-white'>
