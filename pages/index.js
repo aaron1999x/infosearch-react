@@ -15,6 +15,7 @@ import {AiOutlineMail,AiOutlinePhone} from 'react-icons/ai';
 import whatsapp from '../public/whatsapp-white.png';
 import {motion} from 'framer-motion'
 import AnimatedText from '@/components/AnimatedText'
+import MetaHead from '@/components/MetaHead'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -120,10 +121,7 @@ const animations={
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Corporate Secretarial Services | Infosearch Consultancy PLT</title>
-        <meta name="description" content="Looking for Corporate Secretarial Services in Malaysia? Infosearch Consultancy will take care of all your business needs through our broad scopes of Company Secretarial Services that cover all areas of company formation and ongoing administration." />
-      </Head>
+      <MetaHead />
       <main className={` ${inter.className} relative`}>
         <section className='h-screen bg-white'>
           <nav className='w-full p-6 lg:px-12 2xl:px-32'>
