@@ -16,6 +16,7 @@ import whatsapp from '../public/whatsapp-white.png';
 import {motion} from 'framer-motion'
 import AnimatedText from '@/components/AnimatedText'
 import MetaHead from '@/components/MetaHead'
+import Script from 'next/script'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -117,11 +118,24 @@ const animations={
   }
 }
 
-
 export default function Home() {
   return (
     <>
       <MetaHead />
+      <Script
+        src='https://www.googletagmanager.com/gtag/js?id=G-DVB2TSL1Q5'
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-DVB2TSL1Q5');
+        `}
+      </Script>
+      
       <main className={` ${inter.className} relative`}>
         <section className='h-screen bg-white'>
           <nav className='w-full p-6 lg:px-12 2xl:px-32'>
