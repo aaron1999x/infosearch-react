@@ -154,11 +154,11 @@ export default function Home() {
               <p className='text-xl md:text-2xl md:inline'>Our services consists of </p>
               <TypeAnimation
                 sequence={[
-                  'Secretarial Appointments.',
+                  'Secretary Appointment.',
                   1000, // Waits 1s
                   'Trademark Registration.', 
                   1000, // Waits 1s
-                  'Company Formation.',
+                  'Company Registration.',
                   1000,
               
                 ]}
@@ -192,7 +192,7 @@ export default function Home() {
             >Why choose us?</motion.h4>
             <motion.p className='text-sm lg:w-3/5 lg:text-base'
             >
-              At Infosearch, we specialize in providing corporate secretarial services to SMEs. With over 30 years of experience, we offer a comprehensive range of services, including business incorporation and advisory, to give your business a competitive edge. Our team of professionals has the necessary skill sets to meet your specific needs, making us a one-stop-shop for all your business needs. Choose us to handle the complicated administrative work, while you focus on growing your business.
+              With 30+ years of experience, we offer comprehensive corporate secretarial services to give your business a competitive edge. From company registration to advisory, our skilled professionals meet your specific needs, making us your one-stop-shop. Delegate administrative work to us and focus on growing your business hassle-free.<br/>Choose Infosearch for SME Success!
             </motion.p>
           </div>
           <div className='my-8 flex flex-col lg:flex-row justify-between item-center lg:my-12'>
