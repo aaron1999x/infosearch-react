@@ -21,7 +21,7 @@ export default function ServicesTab() {
                 )
               }
             >
-              Company Formation
+              Company Registration
             </Tab>
             <Tab
               className={({ selected }) =>
@@ -34,7 +34,7 @@ export default function ServicesTab() {
                 )
               }
             >
-              Secretarial Appointment
+              Secretary Appointment
             </Tab>
             <Tab
               className={({ selected }) =>
@@ -60,35 +60,22 @@ export default function ServicesTab() {
           >
             <div className='p-1 lg:text-lg lg:p-3'>
               <h2 className='font-bold'>Private Limited Company (Sdn. Bhd.)</h2>
-              <p>Our Goal is to guide you on everything you need when setting up your Company.</p>
-              <p>Incorporation Package includes the following value added services:</p>
-              <div className='mt-2'>
-                <ol className='list-decimal pl-5'>
-                  <li>5 Sets of Certified True Copies for:</li>
-                  <ul class="list-disc pl-5">
-                    <li>Section 14</li>
-                    <li>Section 15</li>
-                    <li>Section 17</li>
-                    <li>Section 58</li>
-                    <li>Corporate Information</li>
-                  </ul>
-
-                  <li>Director&apos;s Resolution:</li>
-                  <ul class="list-disc pl-5">
-                    <li>First Board Resolution</li>
-                    <li>Opening of First Bank Account</li>
-                    <li>Allotment of Shares up to RM1,000</li>
-                  </ul>
-
-                  <li>Issuance of Share Certificate(s)</li>
-                  <li>Obtain Company Tax Number (C) and Employer&apos;s Tax Number (E)</li>
-                  <li>Provision of Registered Address</li>
-                  <li>Maintenance of Company Records & Registers</li>
-                  <li>Appointment of 2 MAICSA Certified Company Secretaries</li>
-                  <li>Three Months Retainer Fees included</li>
-
-                </ol>
+              <p>Set up your Company seamlessly with our expert-guided Incorporation Package:</p>
+              <div className='my-2'>
+                <ul className='list-disc pl-5'>
+                  <li>First Board Resolution for Company Incorporation</li>
+                  <li>Certified True Copies of Registration Documents (5 sets)</li>
+                  <li>Registration of Corporate Bank Account</li>
+                  <li>Issuance of Share Certificates to Shareholders</li>
+                  <li>Obtain Tax Reference number (C) and Employer&apos;s Number (E) for Tax Compliance</li>
+                  <li>Provision of our Registered Address for your convenience</li>
+                  <li>Efficient Management of Digitalized Company Records and Registers</li>
+                  <li>Appointment of 2 MAICSA-Certified Chartered Secretaries</li>
+                </ul>
               </div>
+              <p>
+                Supercharge Your Business Today with Our Incorporation Package!
+              </p>
 
             </div>
           </Tab.Panel>
@@ -110,7 +97,6 @@ export default function ServicesTab() {
                   <li>Receive Updates on the latest Regulations of the Companies Act 2016.</li>
                 </ol>
               </div>
-
             </div>
           </Tab.Panel>
           <Tab.Panel
