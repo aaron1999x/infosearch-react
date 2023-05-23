@@ -4,7 +4,7 @@
 This project marked my debut as a freelance developer, and it presented an exciting opportunity to revamp the client's outdated website and transform it into a sleek, contemporary platform. The primary objective was to create a visually appealing and user-friendly interface that aligned with modern design principles.
 
 
-## Bulit with 
+## Built with 
 <p align="left">
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" width="36" height="36" alt="HTML5" /></a> &nbsp;
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" width="36" height="36" alt="React" /></a> &nbsp; <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" width="36" height="36" alt="TailwindCSS" /></a> 
