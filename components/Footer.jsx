@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className='px-6 pt-10 pb-3 bg-bluelite lg:px-16 2xl:px-32'>
+    <footer className='px-6 pt-10 pb-3 bg-bluelite'>
       <div className='flex flex-col gap-16 py-6 lg:flex-row lg:items-start lg:justify-between lg:w-[1000px] lg:mx-auto 2xl:w-[1400px]'>
         <div className='lg:w-1/5'>
           <Image src={logolight} alt='Infosearch logo' className='w-[180px] lg:w-[200px]'/>
