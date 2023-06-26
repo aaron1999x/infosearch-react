@@ -10,6 +10,9 @@ const Footer = () => {
       <div className='flex flex-col gap-16 py-6 lg:flex-row lg:items-start lg:justify-between lg:w-[1000px] lg:mx-auto 2xl:w-[1400px]'>
         <div className='lg:w-1/5'>
           <Image src={logolight} alt='Infosearch logo' className='w-[180px] lg:w-[200px]'/>
+          <p className='text-sm text-bluetitle mt-2'>
+            201404001540 (LLP0002962-LGN)
+          </p>
         </div>
         <div className='lg:w-2/5'>
           <h4 className='text-2xl text-white font-semibold mb-2 lg:text-3xl'>Contact</h4>
