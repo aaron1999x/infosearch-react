@@ -39,8 +39,11 @@ const Hero = () => {
           initial="initialLeft"
           animate="animateX"
           
-        >Infosearch consultancy
+        >Infosearch consultancy PLT
         </motion.p>
+        <p className='text-sm text-gray-500'>
+          201404001540 (LLP0002962-LGN)
+        </p>
         <AnimatedText text="Simplify your corporate journey with us." />
         <p className='text-xl md:text-2xl md:inline'>Our services consists of </p>
         <TypeAnimation
