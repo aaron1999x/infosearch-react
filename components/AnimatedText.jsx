@@ -31,7 +31,7 @@ const AnimatedText = (props) => {
   }
   
   return (
-    <motion.h1 className='text-5xl font-bold md:text-6xl md:my-2 lg:max-w-3xl'
+    <motion.h1 className='text-5xl font-bold md:text-6xl my-2 lg:max-w-3xl'
       variants={qoute}
       initial="initial"
       animate="animate"

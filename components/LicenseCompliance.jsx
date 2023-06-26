@@ -16,7 +16,7 @@ const LicenseCompliance = () => {
             initial="initialLeft"
             whileInView="animateX"
             viewport={{once:true}}
-          >We are Licensed By</motion.h4>
+          >We are Registered With</motion.h4>
           <motion.div className='flex justify-center items-center gap-6'
             variants={animations}
             initial="initialFade"
