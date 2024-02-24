@@ -1,8 +1,8 @@
 import React from 'react'
 import logolight from '../public/info-logo-white.png'
 import {AiOutlineMail,AiOutlinePhone} from 'react-icons/ai';
-import Map from './Map';
 import Image from 'next/image';
+import MapNew from './MapNew';
 
 const Footer = () => {
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
             </a>
           </div>
           <div className='flex mt-5'>
-            <Map />
+            <MapNew />
           </div>
         </div>
         

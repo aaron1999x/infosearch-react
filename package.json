@@ -11,7 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^1.7.14",
     "@radix-ui/react-accordion": "^1.1.1",
-    "@react-google-maps/api": "^2.18.1",
+    "@react-google-maps/api": "^2.19.3",
+    "@vis.gl/react-google-maps": "^0.7.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
