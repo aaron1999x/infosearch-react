@@ -63,7 +63,7 @@ const Hero = () => {
           className='text-xl text-infored md:text-2xl'
         />
         <div className='mt-3'>
-          <motion.button class="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg"
+          <motion.button className="bg-infored hover:bg-white hover:text-infored hover:border-infored border text-white font-bold py-2 px-4 rounded-lg"
             variants={heroAnimations}
             initial="initialBottom"
             animate="animateY"

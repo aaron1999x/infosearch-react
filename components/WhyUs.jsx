@@ -65,17 +65,17 @@ const WhyUs = () => {
           <motion.div
             variants={statsItem}
           >
-            <CompanyStat number='600' text="active clients" />
+            <CompanyStat number={600} text="active clients" />
           </motion.div>
           <motion.div
             variants={statsItem}
           >
-            <CompanyStat number='2000' text="companies incoporated" />
+            <CompanyStat number={2000} text="companies incoporated" />
           </motion.div>
           <motion.div
             variants={statsItem}
           >
-            <CompanyStat number='5000' text="lifetime clients" />
+            <CompanyStat number={5000} text="lifetime clients" />
           </motion.div>
         </motion.div>
       </div>
