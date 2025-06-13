@@ -50,9 +50,9 @@ const Footer = () => {
               42B, Jalan SS 6/8, Kelana Jaya 47301 Petaling Jaya, Selangor
             </a>
           </div>
-          {/* <div className="flex mt-5">
+          <div className="flex mt-5">
             <MapNew />
-          </div> */}
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center text-white mt-5">

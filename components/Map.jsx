@@ -2,9 +2,11 @@ import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api';
 import React, { useMemo } from 'react';
 
 const Map = () => {
+  const googleMapsApiKey = process.env.NEXT_PUBLIC_MAPS_KEY;
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'key stolen im poor now',
+    googleMapsApiKey: googleMapsApiKey,
   });
 
   const center = useMemo(
