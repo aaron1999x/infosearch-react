@@ -1,13 +1,16 @@
-import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
-import React, { useMemo } from "react";
+import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api';
+import React, { useMemo } from 'react';
 
 const Map = () => {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyBlnjZNLQZ0XvwEnODwHDmSQmKYgg9rlGk",
+    googleMapsApiKey: 'key stolen im poor now',
   });
-  
-  const center = useMemo(() => ({ lat: 3.106026972295699, lng: 101.59766799903595 }), []);
+
+  const center = useMemo(
+    () => ({ lat: 3.106026972295699, lng: 101.59766799903595 }),
+    []
+  );
   return (
     <div className="Map h-[450px]  lg:h-[300px]">
       {!isLoaded ? (
@@ -25,7 +28,7 @@ const Map = () => {
         </GoogleMap>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Map
+export default Map;
